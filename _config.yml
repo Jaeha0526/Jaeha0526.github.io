@@ -20,16 +20,15 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                 Jaeha Lee
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Caltech High Energy Physics PhD candidate transitioning to AI.
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               PhD Candidate @ Caltech
 
 # A list of keywords for your blog
 keywords:              []
@@ -40,10 +39,10 @@ keywords:              []
 logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
-author:
+author: jaeha-lee
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                Jaeha Lee
+  email:               jaeha@caltech.edu
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
