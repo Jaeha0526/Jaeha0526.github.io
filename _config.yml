@@ -50,6 +50,8 @@ author:
 menu:
   - title:             About
     url:               /about/
+  - title:             example
+    url:               /example
   - title:             Blog
     url:               /
 
