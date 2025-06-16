@@ -50,9 +50,9 @@ author:
 menu:
   - title:             About
     url:               /about/
-  - title:             example
-    url:               /example
-  - title:             Blog
+  - title:             Research
+    url:               /research/
+  - title:             Recent Posts
     url:               /
 
 # Add links to the footer.
