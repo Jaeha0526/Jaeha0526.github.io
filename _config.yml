@@ -39,7 +39,7 @@ keywords:              []
 logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
-author: jaeha-lee
+author:
   # Used by `jekyll-feed`:
   name:                Jaeha Lee
   email:               jaeha@caltech.edu
