@@ -17,3 +17,18 @@
   width: 10rem;
   height: 10rem;
 }
+
+/* Make About page profile picture rectangular and larger */
+.content .avatar {
+  width: 12rem;
+  height: 15rem;
+  border-radius: 0.5rem; /* Small rounded corners instead of oval */
+}
+
+.avatar {
+  border-radius: 0.5rem; /* Override default circular shape */
+}
+
+.avatar img {
+  object-fit: cover; /* Maintain aspect ratio while filling container */
+}
