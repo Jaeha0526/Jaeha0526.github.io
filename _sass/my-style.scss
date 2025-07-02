@@ -30,9 +30,9 @@
 /* Make About page profile picture rectangular and larger with higher specificity */
 .content .page .avatar,
 .content .about .avatar {
-  width: 12rem !important;
-  height: 15rem !important;
-  border-radius: 0.5rem !important; /* Small rounded corners instead of oval */
+  width: 10.8rem !important; /* 90% of 12rem */
+  height: 13.5rem !important; /* 90% of 15rem */
+  border-radius: 0.5rem !important; /* Match sidebar picture roundness */
 }
 
 .content .page .avatar img,
@@ -40,7 +40,7 @@
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important; /* Maintain aspect ratio while filling container */
-  border-radius: 0.5rem !important;
+  border-radius: 0.5rem !important; /* Match sidebar picture roundness */
 }
 
 /* Fallback avatar styles with higher specificity */
