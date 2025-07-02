@@ -39,17 +39,19 @@ keywords:              []
 logo:                  /assets/img/blog/jaeha_alaska.jpeg
 
 # This should be the same author as first entry in `_data/authors.yml`.
-author:
-  # Used by `jekyll-feed`:
-  name:                Jaeha Lee
-  email:               jaeha@caltech.edu
-  # # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+# Set to the key used in _data/authors.yml
+author:                jaeha-lee
 
 # Add links to the sidebar.
 menu:
   - title:             About
     url:               /about/
+  - title:             Research
+    url:               /research/
+  - title:             Claude Artifacts
+    url:               /claude-artifacts/
+  - title:             Claude Research
+    url:               /claude-research/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

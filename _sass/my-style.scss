@@ -13,22 +13,42 @@
   }
 }
 
-.sidebar-about .avatar {
-  width: 10rem;
-  height: 10rem;
+/* Enhanced sidebar avatar with higher specificity */
+.sidebar .sidebar-about .avatar {
+  width: 10rem !important;
+  height: 10rem !important;
+  border-radius: 0.5rem !important; /* Override default circular shape */
 }
 
-/* Make About page profile picture rectangular and larger */
-.content .avatar {
-  width: 12rem;
-  height: 15rem;
-  border-radius: 0.5rem; /* Small rounded corners instead of oval */
+.sidebar .sidebar-about .avatar img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Maintain aspect ratio while filling container */
+  border-radius: 0.5rem !important;
 }
 
+/* Make About page profile picture rectangular and larger with higher specificity */
+.content .page .avatar,
+.content .about .avatar {
+  width: 12rem !important;
+  height: 15rem !important;
+  border-radius: 0.5rem !important; /* Small rounded corners instead of oval */
+}
+
+.content .page .avatar img,
+.content .about .avatar img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Maintain aspect ratio while filling container */
+  border-radius: 0.5rem !important;
+}
+
+/* Fallback avatar styles with higher specificity */
 .avatar {
-  border-radius: 0.5rem; /* Override default circular shape */
+  border-radius: 0.5rem !important; /* Override default circular shape */
 }
 
 .avatar img {
-  object-fit: cover; /* Maintain aspect ratio while filling container */
+  object-fit: cover !important; /* Maintain aspect ratio while filling container */
+  border-radius: 0.5rem !important;
 }
