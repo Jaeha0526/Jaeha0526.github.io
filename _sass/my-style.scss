@@ -52,3 +52,21 @@
   object-fit: cover !important; /* Maintain aspect ratio while filling container */
   border-radius: 0.5rem !important;
 }
+
+/* Reduce post images to 75% size */
+.content img:not(.avatar img):not(.sidebar img) {
+  max-width: 75% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Reduce post list images (blog post previews) to 75% */
+.list-post img,
+.blog img,
+.post-preview img {
+  max-width: 75% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
