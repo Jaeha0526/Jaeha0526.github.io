@@ -10,7 +10,7 @@ categories: [claude-artifacts]
 tags: [claude, artifacts, conversation, mindmap, ui, javascript]
 ---
 
-## Revolutionary Conversation Experience
+## Mindmap-Like Conversation with Claude
 
 Traditional conversations with AI follow a linear, back-and-forth pattern. But what if we could **branch out** and explore multiple conversation threads simultaneously? 
 
