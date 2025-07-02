@@ -354,8 +354,8 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for twitter cards
-# twitter:
-#   username:            <username>
+twitter:
+  username:            jaeha_lee
 
 # Used for facebook open graph
 # facebook:
@@ -369,6 +369,7 @@ social:
   links:
     - https://github.com/Jaeha0526
     - https://linkedin.com/in/jaeha-lee-323279315
+
 
 
 # Plugin Configs

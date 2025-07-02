@@ -23,3 +23,5 @@ This Claude Artifact transforms the way we interact with AI by creating a **mind
 ---
 
 *This is just the beginning of what's possible when we reimagine the conversation interface. What other conversation paradigms could we explore?*
+
+{% include share-buttons.html %}

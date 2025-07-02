@@ -1,0 +1,51 @@
+<!-- Social Share Buttons -->
+<div class="share-buttons" style="margin: 2rem 0; padding: 1rem; border-top: 1px solid #eee; text-align: center;">
+  <p style="margin-bottom: 1rem; font-weight: bold;">Share this post:</p>
+  
+  <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | uri_escape }}&text={{ page.title | uri_escape }}" 
+     target="_blank" 
+     rel="noopener" 
+     style="display: inline-block; margin: 0.5rem; padding: 0.5rem 1rem; background: #1da1f2; color: white; text-decoration: none; border-radius: 5px;">
+    🐦 Twitter
+  </a>
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | uri_escape }}" 
+     target="_blank" 
+     rel="noopener" 
+     style="display: inline-block; margin: 0.5rem; padding: 0.5rem 1rem; background: #0077b5; color: white; text-decoration: none; border-radius: 5px;">
+    💼 LinkedIn
+  </a>
+  
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | uri_escape }}" 
+     target="_blank" 
+     rel="noopener" 
+     style="display: inline-block; margin: 0.5rem; padding: 0.5rem 1rem; background: #4267b2; color: white; text-decoration: none; border-radius: 5px;">
+    📘 Facebook
+  </a>
+  
+  <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | uri_escape }}&title={{ page.title | uri_escape }}" 
+     target="_blank" 
+     rel="noopener" 
+     style="display: inline-block; margin: 0.5rem; padding: 0.5rem 1rem; background: #ff4500; color: white; text-decoration: none; border-radius: 5px;">
+    🟠 Reddit
+  </a>
+  
+  <a href="mailto:?subject={{ page.title | uri_escape }}&body=Check out this post: {{ page.url | absolute_url | uri_escape }}" 
+     style="display: inline-block; margin: 0.5rem; padding: 0.5rem 1rem; background: #34495e; color: white; text-decoration: none; border-radius: 5px;">
+    ✉️ Email
+  </a>
+  
+  <!-- Copy Link Button -->
+  <button onclick="copyToClipboard('{{ page.url | absolute_url }}')" 
+          style="display: inline-block; margin: 0.5rem; padding: 0.5rem 1rem; background: #6c757d; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    🔗 Copy Link
+  </button>
+</div>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    alert('Link copied to clipboard!');
+  });
+}
+</script>
