@@ -7,7 +7,7 @@ image:
   path: /assets/img/blog/mindmap-like-conversation.png
 sitemap: true
 categories: [claude-artifacts]
-tags: [claude, artifacts, conversation, mindmap, ui, javascript]
+tags: [claude artifact, claude artifacts, claude, artifacts, conversation, mindmap, mindmap like conversation, talk to ai, branching conversation, ]
 ---
 
 ## Mindmap-Like Conversation with Claude
