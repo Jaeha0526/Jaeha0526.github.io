@@ -38,6 +38,10 @@ keywords:              []
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/img/blog/jaeha_alaska.jpeg
 
+# Favicon configuration
+favicon:               /assets/icons/favicon.ico
+apple_touch_icon:      /assets/icons/icon-192x192.png
+
 # This should be the same author as first entry in `_data/authors.yml`.
 # Set to the key used in _data/authors.yml
 author:                jaeha-lee
