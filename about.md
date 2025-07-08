@@ -1,6 +1,6 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
+image: /assets/img/blog/caltech_at_sunset.jpeg
 description: >
   Theoretical physics Ph.D. candidate with expertise in LLM development, agentic systems, and AI alignment. 
   Bridging physics and AI through innovative research.

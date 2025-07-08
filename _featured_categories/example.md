@@ -17,7 +17,7 @@ description: >
 no_groups: true
 
 # Add to menu
-menu: true
+menu: false
 order: 2
 
 # Exclude this example category from the sitemap.
