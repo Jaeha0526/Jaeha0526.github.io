@@ -5,6 +5,8 @@ categories: [claude-artifacts]
 tags: [claude, ai, artifacts]
 description: >
   A test post to verify the Claude Artifacts category is working properly.
+sitemap: false
+published: false
 ---
 
 # Test Claude Artifacts Post

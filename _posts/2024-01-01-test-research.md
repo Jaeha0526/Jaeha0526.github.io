@@ -5,6 +5,8 @@ categories: [research]
 tags: [physics, ai]
 description: >
   A test post to verify the Research category is working properly.
+sitemap: false
+published: false
 ---
 
 # Test Research Post
