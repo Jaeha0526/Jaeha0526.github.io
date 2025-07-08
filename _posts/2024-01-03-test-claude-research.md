@@ -5,8 +5,6 @@ categories: [claude-research]
 tags: [claude, research, ai]
 description: >
   A test post to verify the Claude Research category is working properly.
-sitemap: false
-published: false
 ---
 
 # Test Claude Research Post
