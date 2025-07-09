@@ -71,20 +71,51 @@
   margin: 0 auto !important;
 }
 
-/* Make home page post titles smaller */
+/* Make home page post titles smaller - comprehensive targeting */
 .blog .post-title,
 .list-post .post-title,
 .post-list .post-title,
 .blog h1.post-title,
 .list-post h1.post-title,
-.post-list h1.post-title {
-  font-size: 1.5rem !important;
-  line-height: 1.2 !important;
+.post-list h1.post-title,
+.content .post-title,
+.content h1.post-title,
+.content h2.post-title,
+.content h3.post-title,
+.page-title,
+.post-header .post-title,
+.post-link,
+.post-list-item .post-title,
+.post-list-item h1,
+.post-list-item h2,
+.post-list-item h3,
+.blog-post .post-title,
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.content .blog .post-title,
+.content .blog h1,
+.content .blog h2,
+.content .blog h3,
+.content .post-list .post-title,
+.content .post-list h1,
+.content .post-list h2,
+.content .post-list h3,
+.content .list-post .post-title,
+.content .list-post h1,
+.content .list-post h2,
+.content .list-post h3 {
+  font-size: 1.3rem !important;
+  line-height: 1.3 !important;
 }
 
-/* Also target generic post title classes */
-.content .post-title,
-.content h1.post-title {
-  font-size: 1.5rem !important;
-  line-height: 1.2 !important;
+/* Even more aggressive targeting for any h1, h2, h3 in blog context */
+.blog h1:not(.page-title):not(.sidebar h1),
+.blog h2:not(.page-title):not(.sidebar h2),
+.blog h3:not(.page-title):not(.sidebar h3),
+.content .blog h1:not(.page-title):not(.sidebar h1),
+.content .blog h2:not(.page-title):not(.sidebar h2),
+.content .blog h3:not(.page-title):not(.sidebar h3) {
+  font-size: 1.3rem !important;
+  line-height: 1.3 !important;
 }
