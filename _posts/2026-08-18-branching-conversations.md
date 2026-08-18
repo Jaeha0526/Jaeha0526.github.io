@@ -36,6 +36,10 @@ It worked, and it changed how I think about talking to AI — but it lived insid
 
 An interactive tree in the sidebar maps every path you've explored: regenerate an answer, branch off a tangent at any message, abandon a dead-end and continue from where things were good. Each branch carries its full root-to-tip history as the AI's context. Built with Next.js and the Claude API.
 
+Here it is running locally — one conversation ("Why is the sky blue?") forked into three branches at the first answer: a deeper physics derivation on `main`, a sunset tangent on `sunsets`, and an explain-like-I'm-five path on `eli5`. Every bubble is a git commit (note the hash under each message):
+
+![GitChat running locally: conversation tree with three branches](/assets/img/blog/gitchat-demo.png)
+
 ## The Ouroboros experience
 
 The part worth writing about is *how* GitChat was built. I used [Ouroboros](https://github.com/Q00/ouroboros), a specification-first workflow that sits on top of your coding agent. Instead of prompting incrementally, Ouroboros interviews you until the ambiguity in what you want is driven down, then crystallizes everything into a seed spec — goal, constraints, acceptance criteria, even a domain ontology — that the agent builds against.
