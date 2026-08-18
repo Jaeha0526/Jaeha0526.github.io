@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Discovering Hidden Algebraic Structures via Transformers with Rank-Aware Beam GRPO"
+hook: >
+  Can a small transformer see the hidden structure inside a polynomial that looks like noise? With rank-aware RL on beam search, it can — sometimes better than Mathematica.
 categories: [projects]
 tags: [transformers, symbolic-reasoning, reinforcement-learning, mathematics]
 image:

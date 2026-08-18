@@ -1,6 +1,6 @@
 {% assign post = include.post %}
 
-<li class="post-list-thumb-item" style="list-style:none; margin:0;">
+<article id="post{{ post.id | replace:'/','-' }}" class="page post" role="article">
   <div style="margin:0 0 3.5rem 0;">
     {% if post.image %}
       {% assign img_src = post.image.path | default:post.image %}
@@ -15,4 +15,4 @@
     {% endif %}
     <a href="{{ post.url | relative_url }}" class="heading flip-title" style="font-size:1.05rem;">{{ post.title }}</a>
   </div>
-</li>
+</article>

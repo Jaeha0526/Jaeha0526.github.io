@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "An AI Scientist that Doesn't Drift"
+hook: >
+  We ran the same autonomous research loop twice: once with a taste oracle, once without. Neither drifted. What changed wasn't the score — it was where the loop dared to look.
 categories: [projects]
 tags: [autonomous-research, kkanbu, ai-agents, robotics, icml]
 image:

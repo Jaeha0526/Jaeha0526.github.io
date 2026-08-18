@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Exploring the Holographic Entropy Cone via Reinforcement Learning"
+hook: >
+  Which entanglement patterns does quantum gravity allow? We taught an RL agent to walk the boundary — and it found rays no human had realized, plus evidence that unknown laws remain.
 categories: [projects]
 tags: [reinforcement-learning, holography, quantum-gravity, entropy-cone, physics]
 image:

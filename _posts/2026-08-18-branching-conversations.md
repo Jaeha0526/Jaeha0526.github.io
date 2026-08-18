@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Branching Conversations: From Claude Artifact to GitChat"
+hook: >
+  Conversations with AI shouldn't be a single thread. GitChat makes every chat a git repo: every message a commit, every tangent a branch, every path kept.
 categories: [projects]
 tags: [gitchat, ouroboros, claude, branching-conversation, mindmap, git, ai-tools, spec-first-development]
 image:

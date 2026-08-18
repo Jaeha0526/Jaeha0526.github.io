@@ -1,13 +1,19 @@
 ---
 layout: post
 title: "An Agentic System for Performing Representation Engineering for Character Control"
+hook: >
+  Personality lives somewhere inside a model's activations. We built an agentic system that finds those directions and steers character along them.
 categories: [projects]
 tags: [representation-engineering, llm, character-control, agentic-systems]
+image:
+  path: /assets/img/blog/repe-umap.png
 description: >
   CS 159 final project implementing an automated system for steering LLM character through representation engineering techniques and guardrailing methods.
 ---
 
 # An Agentic System for Performing Representation Engineering for Character Control
+
+*CS 159 final project. [Full report (PDF)](/assets/files/CS_159_Final_Project-3.pdf)*
 
 ## Project Overview
 
@@ -30,6 +36,8 @@ Our system utilizes representation engineering to primarily shape character by:
 - Identifying key directions in embedding space
 - Manipulating these representations to achieve desired character traits
 
+![UMAP projection of 110 concept vectors for 42 emotions extracted from Llama-3-8B-Instruct](/assets/img/blog/repe-umap.png)
+
 ### Guardrailing Methods
 The guardrails ensure that character shaping:
 - Stays within appropriate discussion frameworks
@@ -41,6 +49,8 @@ The automated system provides:
 - **Systematic Control**: Consistent application of character modifications
 - **Real-time Adaptation**: Dynamic adjustment based on context
 - **Quality Assurance**: Automated validation of character traits
+
+![Effectiveness comparison: steering with vs without automated vector selection](/assets/img/blog/repe-effect.png)
 
 ## Key Features
 
