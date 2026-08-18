@@ -8,97 +8,44 @@ tags: [representation-engineering, llm, character-control, agentic-systems]
 image:
   path: /assets/img/blog/repe-umap.png
 description: >
-  CS 159 final project implementing an automated system for steering LLM character through representation engineering techniques and guardrailing methods.
+  CS 159 final project: an automated multi-agent system that extracts emotion concept vectors from
+  Llama-3-8B, steers its character along them, and wraps the result in guardrails — tested across
+  42 emotions.
 ---
 
 # An Agentic System for Performing Representation Engineering for Character Control
 
-*CS 159 final project. [Full report (PDF)](/assets/files/CS_159_Final_Project-3.pdf)*
+*With Deepro Pasha and Ananya Gangavarapu (Caltech CS 159). [Full report (PDF)](/assets/files/CS_159_Final_Project-3.pdf) · [Code](https://github.com/anigasan/CS1592025)*
 
-## Project Overview
+Character in an LLM — its tendencies, patterns, and values — isn't just a prompt away. It lives in the model's internal representations, and **representation engineering (RepE)** can steer it there directly: extract a concept direction from contrastive data, then push activations along that direction at generation time. No retraining, no fine-tuning, precise control.
 
-This project implements an automated system for steering character of large language models (LLMs) via representation engineering techniques and guardrailing methods. Character or personality in LLMs has grown as both a new area of investigation into improving LLM performance and a practical consideration in affecting user interactions across multiple software platforms.
+The catch is that doing RepE well is tedious: generating contrastive datasets, training readers per emotion per layer, evaluating whether steering actually worked. Our project turned that entire pipeline into an **agentic system** that runs it automatically.
 
-## Motivation
+## The system
 
-Character in LLMs is best described as a definite but changing set of tendencies, patterns, and values that reflect LLM-user interaction. As users increasingly personify LLMs across various platforms, the ability to systematically control and shape these personalities becomes crucial for:
+Built on CrewAI, the system orchestrates specialized agents across the full RepE lifecycle against Meta-Llama-3-8B-Instruct:
 
-- **User Experience**: Tailoring interactions to user preferences
-- **Safety**: Ensuring appropriate discussion boundaries
-- **Adaptability**: Maintaining necessary flexibility in responses
-- **Consistency**: Providing reliable personality traits
+- **Training agents** — an *Emotion Keyword Specialist* generates contrastive training data for a target emotion; a *RepReader Trainer* extracts direction vectors from it via PCA across all 31 layers
+- **Evaluation agents** — a *Prompt Design Specialist* builds test scenarios where the emotion fits the context *and* where it conflicts; *Category* and *Overall* evaluators score baseline vs controlled outputs on emotion expression and appropriateness
+- **Vector management agents** — a *Concept Vector Analyst* and *Vector Librarian* maintain a growing library of high-quality vectors, selecting and linearly combining them with fresh extractions
+- **NeMo Guardrails** as a final safety layer, so steering toward an emotion can't push outputs into toxicity
 
-## Technical Approach
+## Findings
 
-### Representation Engineering
-Our system utilizes representation engineering to primarily shape character by:
-- Analyzing internal model representations
-- Identifying key directions in embedding space
-- Manipulating these representations to achieve desired character traits
+**Emotion representations are stable — and live in the middle layers.** Extracting the same emotion 15 independent times, cosine consistency concentrates around layers −12 to −15. Early layers haven't formed high-level semantics yet; late layers are busy producing output. The middle is where character lives.
+
+**The emotion space has structure.** We extracted vectors for 42 distinct emotions (110 vectors total) and projected them with UMAP:
 
 ![UMAP projection of 110 concept vectors for 42 emotions extracted from Llama-3-8B-Instruct](/assets/img/blog/repe-umap.png)
 
-### Guardrailing Methods
-The guardrails ensure that character shaping:
-- Stays within appropriate discussion frameworks
-- Maintains necessary adaptability
-- Prevents harmful or inappropriate personality expressions
+Same-emotion vectors cluster tightly, and psychologically meaningful neighborhoods emerge — anger next to violence, love with heartwarming, nostalgia with loneliness and melancholy, confidence with pride. Intriguingly, the space splits into two macro-clusters whose organizing principle doesn't correspond to valence or arousal — some other axis of the model's emotional geometry we couldn't name.
 
-### Agentic System Design
-The automated system provides:
-- **Systematic Control**: Consistent application of character modifications
-- **Real-time Adaptation**: Dynamic adjustment based on context
-- **Quality Assurance**: Automated validation of character traits
+**The vector library pays off.** In an ablation across 10 emotions (from anger to schadenfreude to wanderlust), combining fresh extractions with high-quality library vectors consistently beat fresh extraction alone:
 
 ![Effectiveness comparison: steering with vs without automated vector selection](/assets/img/blog/repe-effect.png)
 
-## Key Features
+## Why it matters
 
-### 1. Automated Character Steering
-- Real-time personality adjustment
-- Consistent trait application
-- Context-aware modifications
+The automation is the point: testing 42 emotions with consistent methodology would be prohibitively slow by hand. An agentic wrapper turns RepE from a research technique into a systematic instrument — and the evaluation-feedback loop opens the door to self-improving steering systems that re-extract when consistency degrades. Character control with guardrails layered on top addresses both sides: precise steering *and* safe outputs.
 
-### 2. Positive Character Traits
-The system focuses on enhancing positive characteristics while maintaining:
-- Appropriate boundaries
-- Ethical considerations
-- User safety
-
-### 3. Interdisciplinary Collaboration
-This project demonstrates collaboration between:
-- **Machine Learning**: Advanced representation techniques
-- **Human-Computer Interaction**: User experience considerations
-- **Ethics**: Responsible AI development
-
-## Collaboration
-
-**Team Members**: 
-- Deepro Pasha (dpasha@caltech.edu)
-- Ananya Gangavarapu (agangava@caltech.edu)
-- Jaeha Lee (jaeha@caltech.edu)
-
-**Institution**: California Institute of Technology
-
-## Research Impact
-
-This work contributes to the growing field of controllable AI systems by:
-- Providing practical tools for character control
-- Demonstrating the effectiveness of representation engineering
-- Establishing frameworks for safe personality modification
-
-### Applications
-- **Chatbot Development**: Customizable AI assistants
-- **Educational Tools**: Adaptive learning personalities
-- **Customer Service**: Tailored interaction styles
-- **Creative Applications**: Character-driven AI systems
-
-## Future Directions
-
-The project opens several avenues for future research:
-- Scaling to larger language models
-- More sophisticated guardrailing mechanisms
-- Integration with other AI safety techniques
-- User study validation
-
-[Download Full Project Report](/assets/files/CS_159_Final_Project-3.pdf){:.btn .btn-primary}
+{% include share-buttons.html %}
