@@ -36,9 +36,15 @@ It worked, and it changed how I think about talking to AI — but it lived insid
 
 An interactive tree in the sidebar maps every path you've explored: regenerate an answer, branch off a tangent at any message, abandon a dead-end and continue from where things were good. Each branch carries its full root-to-tip history as the AI's context. Built with Next.js and the Claude API.
 
-Here it is running locally — one conversation ("Why is the sky blue?") forked into three branches at the first answer: a deeper physics derivation on `main`, a sunset tangent on `sunsets`, and an explain-like-I'm-five path on `eli5`. Every bubble is a git commit (note the hash under each message):
+Here it is running locally. The whole point is the **tree**: one conversation ("Why is the sky blue?") grew into 16 nodes across 5 branches — a deep physics derivation on `main`, a sunset tangent, an explain-like-I'm-five path, and two character branches. Every node is a git commit; clicking any node jumps you to that branch at that point:
 
-![GitChat running locally: conversation tree with three branches](/assets/img/blog/gitchat-demo.png)
+![GitChat conversation tree: 16 nodes across 5 branches](/assets/img/blog/gitchat-tree.png)
+
+Branching also makes **comparison** natural. GitChat supports AI characters (custom system prompts), so I forked the same question — *"Is the blueness of the sky a property of the sky itself, or something we create by looking at it?"* — into two branches, one asking a **Physicist** character, one asking a **Philosopher**. Same fork point, same context, two worldviews side by side:
+
+![Same question, two characters: physicist vs philosopher branches](/assets/img/blog/gitchat-characters.png)
+
+In a linear chat, the second answer would have overwritten the first; here both live permanently on their own branches, and I can keep developing either thread.
 
 ## The Ouroboros experience
 
