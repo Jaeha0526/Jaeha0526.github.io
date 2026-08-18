@@ -1,0 +1,21 @@
+{% assign post = include.post %}
+{% assign format = include.format | default:site.data.strings.date_formats.related_post | default:"%d %b %Y" %}
+
+<li class="post-list-thumb-item" style="list-style:none; margin:0 0 2rem 0;">
+  <a href="{{ post.url | relative_url }}" class="no-hover" style="display:flex; align-items:flex-start; gap:1.25rem; flex-wrap:wrap;">
+    {% if post.image %}
+      {% assign img_src = post.image.path | default:post.image %}
+      <span style="flex:0 1 48%; min-width:260px; display:block;">
+        <img src="{{ img_src | relative_url }}" alt="{{ post.title }}" loading="lazy"
+             style="width:100%; height:auto; border-radius:8px; display:block; box-shadow:0 2px 8px rgba(0,0,0,.15);" />
+      </span>
+    {% endif %}
+    <span style="flex:1 1 40%; min-width:220px; display:block;">
+      <span class="h4" style="display:block; margin:0 0 .25rem 0;"><span class="flip-title">{{ post.title }}</span></span>
+      <time class="faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>
+      {% if post.description %}
+        <span class="faded" style="display:block; margin-top:.5rem; font-size:.95rem; line-height:1.5;">{{ post.description | markdownify | strip_html | truncate: 180 }}</span>
+      {% endif %}
+    </span>
+  </a>
+</li>

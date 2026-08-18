@@ -3,6 +3,8 @@ layout: post
 title: "Exploring the Holographic Entropy Cone via Reinforcement Learning"
 categories: [projects]
 tags: [reinforcement-learning, holography, quantum-gravity, entropy-cone, physics]
+image:
+  path: /assets/img/blog/entropy-fig3.png
 description: >
   Published in JHEP (2026). We develop a reinforcement learning algorithm that searches for graph
   realizations of entropy vectors, resolving the status of "mystery" extreme rays of the N=6
@@ -31,6 +33,9 @@ Two regimes make the method useful:
 ## Results
 
 - **N=3 validation**: the algorithm rediscovers monogamy of mutual information (MMI) starting from a target vector outside the cone, and its reward landscape matches analytical predictions with correlation 0.996.
+
+![3D view of the reward landscape on the N=3 symmetric slice: analytical surface vs RL points](/assets/img/blog/entropy-fig3.png)
+
 - **N=6 mystery rays**: we analyzed the six extreme rays of the subadditivity cone (from [arXiv:2412.15364](https://arxiv.org/abs/2412.15364)) that satisfy all known holographic entropy inequalities yet lacked graph realizations. Our algorithm **found realizations for three of them**, proving they are genuine extreme rays of the HEC.
 - **Unknown inequalities exist**: for the remaining three rays we provide evidence that no realization exists — implying there are holographic entropy inequalities for N=6 that have not yet been discovered.
 

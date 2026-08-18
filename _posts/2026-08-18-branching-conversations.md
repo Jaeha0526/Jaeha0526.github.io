@@ -4,7 +4,7 @@ title: "Branching Conversations: From Claude Artifact to GitChat"
 categories: [projects]
 tags: [gitchat, ouroboros, claude, branching-conversation, mindmap, git, ai-tools, spec-first-development]
 image:
-  path: /assets/img/blog/mindmap-like-conversation.png
+  path: /assets/img/blog/gitchat-tree.png
 description: >
   Breaking free from linear chat, in two acts: a mindmap-style branching conversation prototype
   built as a Claude Artifact, and GitChat — the real self-hosted app where every conversation is a
