@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Exploring the Holographic Entropy Cone via Reinforcement Learning"
-categories: [research]
+categories: [projects]
 tags: [reinforcement-learning, holography, quantum-gravity, entropy-cone, physics]
 description: >
   Published in JHEP (2026). We develop a reinforcement learning algorithm that searches for graph

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "An Agentic System for Performing Representation Engineering for Character Control"
-categories: [research]
+categories: [projects]
 tags: [representation-engineering, llm, character-control, agentic-systems]
 description: >
   CS 159 final project implementing an automated system for steering LLM character through representation engineering techniques and guardrailing methods.

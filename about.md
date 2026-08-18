@@ -24,16 +24,16 @@ I'm a **Physical Design Engineer (Machine Learning) at Apple** (since October 20
 ## Recent Work
 
 ### Exploring the Holographic Entropy Cone via RL *(JHEP 2026)*
-With Temple He and Hirosi Ooguri. An RL algorithm that searches for graph realizations of entropy vectors — resolving the status of "mystery" extreme rays of the N=6 cone and implying unknown holographic entropy inequalities exist. [Post](/research/2026-08-18-entropy-cone-rl/) · [arXiv:2601.19979](https://arxiv.org/abs/2601.19979)
+With Temple He and Hirosi Ooguri. An RL algorithm that searches for graph realizations of entropy vectors — resolving the status of "mystery" extreme rays of the N=6 cone and implying unknown holographic entropy inequalities exist. [Post](/projects/2026-08-18-entropy-cone-rl/) · [arXiv:2601.19979](https://arxiv.org/abs/2601.19979)
 
 ### An AI Scientist that Doesn't Drift *(ICML 2026 AI for Science Workshop)*
-Autonomous research loops for quadruped robot navigation, run as a controlled ablation with and without **kkanbu**, our taste oracle. The scaffold keeps the loop honest; kkanbu decides where it looks. [Post](/research/2026-08-18-kkanbu-research-taste/) · [arXiv:2608.07542](https://arxiv.org/abs/2608.07542)
+Autonomous research loops for quadruped robot navigation, run as a controlled ablation with and without **kkanbu**, our taste oracle. The scaffold keeps the loop honest; kkanbu decides where it looks. [Post](/projects/2026-08-18-kkanbu-research-taste/) · [arXiv:2608.07542](https://arxiv.org/abs/2608.07542)
 
 ### Rank-Aware Beam GRPO for Polynomial Decomposition *(TMLR)*
-Transformers discovering hidden algebraic structures, with a novel rank-aware RL method cutting inference compute ~75%. Outperforms Mathematica in various simplification cases. [Post](/research/2025-07-08-polynomial-substructure/) · [arXiv:2508.15766](https://arxiv.org/abs/2508.15766)
+Transformers discovering hidden algebraic structures, with a novel rank-aware RL method cutting inference compute ~75%. Outperforms Mathematica in various simplification cases. [Post](/projects/2025-07-08-polynomial-substructure/) · [arXiv:2508.15766](https://arxiv.org/abs/2508.15766)
 
 ### Multi-Turn Jailbreaks Are Simpler Than They Seem *(COLM 2025 SoLaR Workshop)*
-Multi-turn jailbreaking is approximately equivalent to resampling single-turn attacks — with implications for safety evaluation. [Post](/research/2025-07-08-multi-turn-jailbreaks/) · [arXiv:2508.07646](https://arxiv.org/abs/2508.07646)
+Multi-turn jailbreaking is approximately equivalent to resampling single-turn attacks — with implications for safety evaluation. [Post](/projects/2025-07-08-multi-turn-jailbreaks/) · [arXiv:2508.07646](https://arxiv.org/abs/2508.07646)
 
 ### Earlier
 - **Research Internship at Morph Labs** *(Jan–Mar 2025)*: RL for tool use and reasoning; imitation learning and policy optimization pipelines on coding benchmarks

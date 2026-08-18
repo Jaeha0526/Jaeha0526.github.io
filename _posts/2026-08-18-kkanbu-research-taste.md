@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "kkanbu: Giving AI Agents Your Research Taste"
-categories: [research]
+categories: [projects]
 tags: [ai-agents, autonomous-research, preference-oracle, knowledge-graph, kkanbu, icml]
 description: >
   From a hackathon experiment to an ICML 2026 workshop paper: kkanbu is a preference oracle that

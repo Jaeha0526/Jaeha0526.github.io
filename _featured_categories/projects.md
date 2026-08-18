@@ -3,7 +3,7 @@ layout: list
 title: Projects
 slug: projects
 description: >
-  Things I build — AI tools, apps, and experiments.
+  Research and things I build — papers, AI tools, apps, and experiments.
 menu: true
-order: 2
+order: 1
 ---

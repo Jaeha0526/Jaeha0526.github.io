@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Discovering Hidden Algebraic Structures via Transformers with Rank-Aware Beam GRPO"
-categories: [research]
+categories: [projects]
 tags: [transformers, symbolic-reasoning, reinforcement-learning, mathematics]
 description: >
   Published in TMLR. A novel approach to multivariate polynomial decomposition using transformers and rank-aware reinforcement learning, achieving 75% reduction in inference compute.
