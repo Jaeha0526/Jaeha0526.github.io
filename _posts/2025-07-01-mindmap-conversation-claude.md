@@ -6,7 +6,7 @@ description: >
 image: 
   path: /assets/img/blog/mindmap-like-conversation.png
 sitemap: true
-categories: [claude-artifacts]
+categories: [projects]
 tags: [claude artifact, claude artifacts, claude, artifacts, conversation, mindmap, mindmap like conversation, talk to ai, branching conversation, ]
 ---
 

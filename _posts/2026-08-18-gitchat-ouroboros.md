@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitChat: Branching Conversations, For Real This Time"
-categories: [claude-artifacts]
+categories: [projects]
 tags: [gitchat, ouroboros, claude, branching-conversation, git, ai-tools, spec-first-development]
 description: >
   A follow-up to my mindmap-conversation Claude Artifact: GitChat is a self-hosted app where every
