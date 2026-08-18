@@ -4,10 +4,12 @@ title: "Multi-Turn Jailbreaks Are Simpler Than They Seem"
 categories: [research]
 tags: [ai-safety, jailbreaks, llm, security]
 description: >
-  Empirical analysis revealing that multi-turn jailbreak attacks on LLMs are equivalent to resampling single-turn attacks, challenging assumptions about attack sophistication.
+  Accepted at the COLM 2025 SoLaR Workshop. Empirical analysis revealing that multi-turn jailbreak attacks on LLMs are equivalent to resampling single-turn attacks, challenging assumptions about attack sophistication.
 ---
 
 # Multi-Turn Jailbreaks Are Simpler Than They Seem
+
+*With Xiaoxue Yang, Anna-Katharina Dick, Jasper Timm, Fei Xie, and Diogo Cruz. Accepted at the **COLM 2025 SoLaR Workshop** ([arXiv:2508.07646](https://arxiv.org/abs/2508.07646), [code](https://github.com/diogo-cruz/multi_turn_simpler)).*
 
 ## Abstract
 

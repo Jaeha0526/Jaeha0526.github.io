@@ -4,10 +4,12 @@ title: "Discovering Hidden Algebraic Structures via Transformers with Rank-Aware
 categories: [research]
 tags: [transformers, symbolic-reasoning, reinforcement-learning, mathematics]
 description: >
-  NeurIPS submission presenting a novel approach to multivariate polynomial decomposition using transformers and rank-aware reinforcement learning, achieving 75% reduction in inference compute.
+  Published in TMLR. A novel approach to multivariate polynomial decomposition using transformers and rank-aware reinforcement learning, achieving 75% reduction in inference compute.
 ---
 
 # Discovering Hidden Algebraic Structures via Transformers with Rank-Aware Beam GRPO
+
+*With Gio Huh, Ning Su, and Tony Yue Yu. Published in **Transactions on Machine Learning Research (TMLR)** ([arXiv:2508.15766](https://arxiv.org/abs/2508.15766), [OpenReview](https://openreview.net/forum?id=Vxf8QDIA6Z), [code](https://github.com/Jaeha0526/PolynomialDecomposition)).*
 
 ## Abstract
 
