@@ -14,7 +14,7 @@ hide_description: true
 
 ## What I Do
 
-I'm a **Physical Design Engineer (Machine Learning) at Apple**, with a background in theoretical high energy physics at **Caltech**. I work at the intersection of physics and AI, in both directions: using modern ML as a search engine over mathematical structures, and building AI systems that can do research with human taste. Current threads:
+I'm a **Physical Design Engineer (Machine Learning) at Apple** (since October 2025). I completed my Ph.D. in theoretical high energy physics at **Caltech** in September 2025. I work at the intersection of physics and AI, in both directions: using modern ML as a search engine over mathematical structures, and building AI systems that can do research with human taste. Current threads:
 
 - **ML for Physics & Mathematics**: Reinforcement learning for the holographic entropy cone, transformers for symbolic algebra (BGRPO), AlphaZero-style self-play for combinatorial bounds
 - **Autonomous Research Systems**: Agentic research loops with structural honesty (falsifiable experiment cards) and **kkanbu** — a preference oracle that holds a researcher's taste as a typed knowledge graph
