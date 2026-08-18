@@ -2,8 +2,9 @@
 layout: about
 image: /assets/img/blog/caltech_at_sunset.jpeg
 description: >
-  Theoretical physics Ph.D. candidate working at the intersection of physics and AI:
-  reinforcement learning for quantum gravity, autonomous research systems, and LLM training.
+  Physical Design Engineer (Machine Learning) at Apple and theoretical physics Ph.D. from Caltech,
+  working at the intersection of physics and AI: ML for chip design, reinforcement learning for
+  quantum gravity, and autonomous research systems.
 hide_description: true
 ---
 
@@ -11,9 +12,9 @@ hide_description: true
 
 <!--author-->
 
-## Current Research Focus
+## What I Do
 
-I work at the intersection of theoretical physics and artificial intelligence, in both directions: using modern ML as a search engine over mathematical structures, and building AI systems that can do research with human taste. Current threads:
+I'm a **Physical Design Engineer (Machine Learning) at Apple**, with a background in theoretical high energy physics at **Caltech**. I work at the intersection of physics and AI, in both directions: using modern ML as a search engine over mathematical structures, and building AI systems that can do research with human taste. Current threads:
 
 - **ML for Physics & Mathematics**: Reinforcement learning for the holographic entropy cone, transformers for symbolic algebra (BGRPO), AlphaZero-style self-play for combinatorial bounds
 - **Autonomous Research Systems**: Agentic research loops with structural honesty (falsifiable experiment cards) and **kkanbu** — a preference oracle that holds a researcher's taste as a typed knowledge graph
