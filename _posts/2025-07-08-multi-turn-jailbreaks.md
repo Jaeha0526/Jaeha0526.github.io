@@ -17,6 +17,8 @@ While defenses against single-turn jailbreak attacks on Large Language Models (L
 
 ## Key Findings
 
+![StrongREJECT scores: single-turn with retries vs multi-turn attacks across models](/assets/img/blog/jail-fig2.png)
+
 Our research challenges the perceived sophistication of multi-turn attacks:
 
 ### 1. Equivalence to Single-Turn Resampling

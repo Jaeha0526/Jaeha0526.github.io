@@ -19,6 +19,8 @@ The holographic entropy cone (HEC) characterizes which entanglement entropy patt
 
 We developed a reinforcement learning algorithm that searches this space of graph realizations directly. Given a target entropy vector, the agent modifies a weighted graph to match the target's min-cut structure, with reward given by the cosine similarity between the achieved and target entropy vectors.
 
+![The S3-symmetric slice of the N=3 entropy space with the RL reward landscape](/assets/img/blog/entropy-fig1.png)
+
 ## The algorithm as a probe
 
 Two regimes make the method useful:
@@ -31,6 +33,8 @@ Two regimes make the method useful:
 - **N=3 validation**: the algorithm rediscovers monogamy of mutual information (MMI) starting from a target vector outside the cone, and its reward landscape matches analytical predictions with correlation 0.996.
 - **N=6 mystery rays**: we analyzed the six extreme rays of the subadditivity cone (from [arXiv:2412.15364](https://arxiv.org/abs/2412.15364)) that satisfy all known holographic entropy inequalities yet lacked graph realizations. Our algorithm **found realizations for three of them**, proving they are genuine extreme rays of the HEC.
 - **Unknown inequalities exist**: for the remaining three rays we provide evidence that no realization exists — implying there are holographic entropy inequalities for N=6 that have not yet been discovered.
+
+![Graph realizations of extreme rays 146, 180, and 181](/assets/img/blog/entropy-fig7.png)
 
 ## Companion tooling
 

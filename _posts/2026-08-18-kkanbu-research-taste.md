@@ -40,6 +40,8 @@ Beyond kkanbu, the loop adds structural honesty mechanisms:
 - **Specialized subagents** restricted to mechanical roles
 - **kkanbu as the sole subjective judge**
 
+![One stream-batch of the AI Scientist loop, with kkanbu as the only subjective judge](/assets/img/blog/kkanbu-loop.png)
+
 ## What we found
 
 The honest headline: **neither arm drifted, and the best single policy came from the oracle-less arm.** The scaffold alone — experiment cards, falsifiable predictions — kept both loops rigorous, with roughly three quarters of hypotheses falsified in each arm.
@@ -51,6 +53,8 @@ What kkanbu changed was **direction, not score**:
 - It carried lessons across research streams that the oracle-less arm repeatedly re-derived from scratch
 
 The scaffold keeps the loop honest; **kkanbu decides where it looks.** I think this division — structure for rigor, an explicit taste artifact for direction — is the right shape for autonomous research systems, and I'm continuing to build on it.
+
+![Density vs. success rate for both ablation arms — without and with kkanbu](/assets/img/blog/kkanbu-results.png)
 
 **Code & research records**: [autoresearch_with_kkanbu](https://github.com/Jaeha0526/autoresearch_with_kkanbu) — includes the full experiment records of both arms.
 

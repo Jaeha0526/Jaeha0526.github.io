@@ -23,6 +23,8 @@ We introduce **Beam Grouped Relative Policy Optimization (BGRPO)**, a rank-aware
 - Reduces inference compute by up to 75%
 - Handles the sparse solution space of polynomial decomposition
 
+![Beam width scaling before and after BGRPO finetuning — comparable accuracy at roughly half the beam width](/assets/img/blog/bgrpo-beam.png)
+
 ### 2. Synthetic Data Pipeline
 Our fine-grained synthetic data generation pipeline enables:
 - Systematic training on polynomial decomposition tasks
