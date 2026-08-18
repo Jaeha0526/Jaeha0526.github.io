@@ -25,10 +25,11 @@ title:                 Jaeha Lee
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Caltech High Energy Physics PhD candidate transitioning to AI.
+  Personal website of Jaeha Lee — Physical Design Engineer (Machine Learning) at Apple,
+  theoretical high energy physics PhD from Caltech, working at the intersection of physics and AI.
 
 # A shorter description for the sidebar.
-tagline:               PhD Candidate @ Caltech
+tagline:               ML @ Apple · Physics PhD
 
 # A list of keywords for your blog
 keywords:              [Jaeha Lee, Jaeha Caltech, Jaeha, jaeha physics, intersection of physics and ai, high energy physicist,\
