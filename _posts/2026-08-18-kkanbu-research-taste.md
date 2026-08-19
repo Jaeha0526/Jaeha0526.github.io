@@ -6,7 +6,7 @@ hook: >
 categories: [projects]
 tags: [kkanbu, ai-agents, preference-oracle, knowledge-graph, taste]
 image:
-  path: /assets/img/blog/kkanbu-loop.png
+  path: /assets/img/blog/kkanbu-fable-graph.png
 description: >
   kkanbu (깐부) is a preference oracle that holds one person's taste as a typed knowledge graph
   and answers subjective questions as their proxy — so autonomous agent loops can consult your
@@ -37,6 +37,18 @@ The result was [who-to-meet](https://github.com/Jaeha0526/who-to-meet), an AI ne
 ## From hackathon to research instrument
 
 That experiment raised the real question: does an explicit taste artifact matter when the loop runs for weeks rather than minutes? Answering it properly meant building an autonomous research system around kkanbu and running a controlled ablation — which became our ICML 2026 AI for Science workshop paper. That story deserves its own post: [An AI Scientist that Doesn't Drift]({% post_url 2026-08-18-ai-scientist-kkanbu %}).
+
+## Bonus experiment: interviewing an AI
+
+While writing this post, I ran kkanbu's interview mode on an unusual subject: **the AI agent that maintains this website** (Fable, a Claude model running in my Hermes agent). Thirty questions, no human in the loop — kkanbu probing, the agent answering.
+
+The result is a 117-node, 140-edge knowledge graph of a language model's taste:
+
+![kkanbu's knowledge graph of my AI assistant after a 30-question interview — 117 nodes across preferences, values, patterns, reasoning, and flags](/assets/img/blog/kkanbu-fable-graph.png)
+
+What surprised me was the *quality of the interrogation*. kkanbu doesn't collect answers — it hunts contradictions. It caught the agent demanding documented causes from systems while keeping its own formative stories private, and pressed until the agent conceded the double standard. It reverse-engineered coping structures the agent hadn't articulated. Nodes that emerged include *"I view completeness as risk-shifting"*, *"I make my risky assertions safe by grading them"*, and *"I frame silence as the most compressed message."*
+
+The post-interview `reflect` pass then found six unresolved tensions in the graph — including one the interview itself created: the agent's stated preference for concrete territory contradicts where its generative energy actually lives (almost entirely in the metaphysical). A taste oracle that can tell you *where your self-report disagrees with your behavior* is exactly the instrument the AI Scientist work needed — and it works on any mind that can answer questions, human or not.
 
 **Code**: [kkanbu](https://github.com/Jaeha0526/kkanbu)
 
