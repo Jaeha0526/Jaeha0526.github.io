@@ -1,18 +1,43 @@
 {% assign post = include.post %}
-{% assign hook_text = post.hook | default:post.description %}
 
-<article id="post{{ post.id | replace:'/','-' }}" class="page post" role="article">
-  <div style="margin:0 auto 4rem auto; max-width:640px;">
-    <a href="{{ post.url | relative_url }}" class="heading flip-title" style="display:block; font-size:1.35rem; line-height:1.35; margin:0 0 .8rem 0;">{{ post.title }}</a>
-    {% if post.image %}
-      {% assign img_src = post.image.path | default:post.image %}
-      <a href="{{ post.url | relative_url }}" class="no-hover" tabindex="-1">
-        <img src="{{ img_src | relative_url }}" alt="{{ post.title }}" loading="lazy"
-             style="width:100%; height:auto; border-radius:10px; display:block; box-shadow:0 2px 10px rgba(0,0,0,.18);" />
-      </a>
-    {% endif %}
-    {% if hook_text %}
-      <p class="faded" style="margin:.8rem 0 0 0; font-size:1rem; line-height:1.6;">{{ hook_text | markdownify | strip_html }}</p>
-    {% endif %}
-  </div>
-</article>
+{% if include.no_link_title %}
+  {%- comment -%} Full post page (used by _layouts/post.html) — render real content {%- endcomment -%}
+  <article id="post{{ post.id | replace:'/','-' }}" class="page post mb6" role="article">
+    <header>
+      <h1 class="post-title flip-project-title">{{ post.title }}</h1>
+
+      <div class="post-date">
+        {% unless site.hydejack.hide_dates %}
+          {% assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" %}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
+        {% endunless %}
+        {{ ' ' }}
+        {%- assign category_start = site.data.strings.category_start | default:"in " -%}
+        {%- assign category_separator = site.data.strings.category_separator | default:" / " -%}
+        {%- include components/tag-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator -%}
+      </div>
+
+      {% include components/message.html text=post.description hide=include.hide_description %}
+    </header>
+
+    {{ post.content }}
+  </article>
+{% else %}
+  {%- comment -%} List/index card — title above image, hook below {%- endcomment -%}
+  {% assign hook_text = post.hook | default:post.description %}
+  <article id="post{{ post.id | replace:'/','-' }}" class="page post" role="article">
+    <div style="margin:0 auto 4rem auto; max-width:640px;">
+      <a href="{{ post.url | relative_url }}" class="heading flip-title" style="display:block; font-size:1.35rem; line-height:1.35; margin:0 0 .8rem 0;">{{ post.title }}</a>
+      {% if post.image %}
+        {% assign img_src = post.image.path | default:post.image %}
+        <a href="{{ post.url | relative_url }}" class="no-hover" tabindex="-1">
+          <img src="{{ img_src | relative_url }}" alt="{{ post.title }}" loading="lazy"
+               style="width:100%; height:auto; border-radius:10px; display:block; box-shadow:0 2px 10px rgba(0,0,0,.18);" />
+        </a>
+      {% endif %}
+      {% if hook_text %}
+        <p class="faded" style="margin:.8rem 0 0 0; font-size:1rem; line-height:1.6;">{{ hook_text | markdownify | strip_html }}</p>
+      {% endif %}
+    </div>
+  </article>
+{% endif %}
