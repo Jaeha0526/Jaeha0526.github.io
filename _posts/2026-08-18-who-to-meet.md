@@ -4,7 +4,7 @@ title: "who-to-meet: An App Built by Interviewing My Taste Oracle"
 hook: >
   An app built in 45 minutes where I never answered a single requirements question. The interview happened — my taste oracle sat in for me.
 categories: [projects]
-tags: [who-to-meet, ouroboros, kkanbu, hackathon, knowledge-graph, ai-tools]
+tags: [who-to-meet, kkanbu, ouroboros, knowledge-graph, ai-tools, hackathon, web-app]
 image:
   path: /assets/img/blog/w2m-graph.png
 description: >

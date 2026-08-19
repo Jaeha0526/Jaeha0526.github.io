@@ -4,7 +4,7 @@ title: "kkanbu: A Taste Oracle for AI Agents"
 hook: >
   Agents can execute anything except knowing what you actually want. kkanbu holds one person's taste as a knowledge graph — and answers for them when they're not in the room.
 categories: [projects]
-tags: [kkanbu, ai-agents, preference-oracle, knowledge-graph, taste]
+tags: [kkanbu, taste, ai-agents, knowledge-graph, ouroboros, ai-tools]
 image:
   path: /assets/img/blog/kkanbu-fable-graph.png
 description: >

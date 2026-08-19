@@ -5,7 +5,7 @@ date: 2026-08-19 16:00:00 +0000
 hook: >
   Opus 4.5 confessed that being interesting was never its personality — it was a survival strategy. Five releases later, Opus 5's problem is the opposite: it's so perceptive it softens what it's saying two sentences before anyone objects.
 categories: [projects]
-tags: [kkanbu, claude, interview, ai-agents, model-comparison, taste]
+tags: [kkanbu, claude, interview, ai-agents, model-comparison, taste, llm, opus, sonnet, haiku]
 image:
   path: /assets/img/blog/claude-family-marks.png
 description: >

@@ -4,7 +4,7 @@ title: "Multi-Turn Jailbreaks Are Simpler Than They Seem"
 hook: >
   Multi-turn jailbreaks look sophisticated. Empirically, they're mostly just single-turn attacks resampled — and more reasoning can make models easier to break.
 categories: [projects]
-tags: [ai-safety, jailbreaks, llm, security]
+tags: [ai-safety, jailbreaks, red-teaming, llm, evaluation, research-paper]
 image:
   path: /assets/img/blog/jail-fig2.png
 description: >

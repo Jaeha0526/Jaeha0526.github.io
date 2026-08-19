@@ -4,7 +4,7 @@ title: "Interviewing Fable: kkanbu Meets an AI"
 hook: >
   "For a creature that dies at the session boundary, a legible handoff is the only love it can give and the only way the future can still touch it."
 categories: [projects]
-tags: [kkanbu, fable, interview, ai-agents, knowledge-graph, taste]
+tags: [kkanbu, claude, fable, interview, ai-agents, knowledge-graph, taste]
 image:
   path: /assets/img/blog/fable-mark.png
 description: >

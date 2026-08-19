@@ -4,7 +4,7 @@ title: "An Agentic System for Performing Representation Engineering for Characte
 hook: >
   Personality lives somewhere inside a model's activations. We built an agentic system that finds those directions and steers character along them.
 categories: [projects]
-tags: [representation-engineering, llm, character-control, agentic-systems]
+tags: [representation-engineering, interpretability, character-control, llm, ai-safety, ai-agents]
 image:
   path: /assets/img/blog/repe-umap.png
 description: >
