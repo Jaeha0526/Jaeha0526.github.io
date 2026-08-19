@@ -1,9 +1,11 @@
 {% assign post = include.post %}
 {% assign hook_text = post.hook | default:post.description %}
+{% assign date_fmt = site.data.strings.date_formats.post | default:"%d %b %Y" %}
 
 <li class="post-list-thumb-item" style="list-style:none; margin:0; padding:0;">
   <div style="margin:0 auto 4rem auto; max-width:640px;">
-    <a href="{{ post.url | relative_url }}" class="heading flip-title" style="display:block; font-size:1.35rem; line-height:1.35; margin:0 0 .8rem 0;">{{ post.title }}</a>
+    <a href="{{ post.url | relative_url }}" class="heading flip-title" style="display:block; font-size:1.35rem; line-height:1.35; margin:0 0 .25rem 0;">{{ post.title }}</a>
+    <time class="faded fine" datetime="{{ post.date | date_to_xmlschema }}" style="display:block; font-size:.8rem; margin:0 0 .7rem 0;">{{ post.date | date:date_fmt }}</time>
     {% if post.image %}
       {% assign img_src = post.image.path | default:post.image %}
       <a href="{{ post.url | relative_url }}" class="no-hover" tabindex="-1">
