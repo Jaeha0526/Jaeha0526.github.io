@@ -36,7 +36,7 @@ The result was [who-to-meet](https://github.com/Jaeha0526/who-to-meet), an AI ne
 
 ## From hackathon to research instrument
 
-That experiment raised the real question: does an explicit taste artifact matter when the loop runs for weeks rather than minutes? Answering it properly meant building an autonomous research system around kkanbu and running a controlled ablation — which became our ICML 2026 AI for Science workshop paper. That story deserves its own post: [An AI Scientist that Doesn't Drift]({% post_url 2026-08-18-ai-scientist-kkanbu %}).
+That experiment raised the real question: does an explicit taste artifact matter when the loop runs for weeks rather than minutes? Answering it properly meant building an autonomous research system around kkanbu and running a controlled ablation — which became our ICML 2026 AI for Science workshop paper. That story deserves its own post: [An AI Scientist that Doesn't Drift]({% post_url 2026-08-19-ai-scientist-kkanbu %}).
 
 ## Bonus experiment: interviewing an AI
 

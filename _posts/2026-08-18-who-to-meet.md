@@ -50,6 +50,6 @@ Three iterations, ~45 minutes of total AI execution time:
 
 ## What it proved
 
-The requirements interview is exactly the kind of subjective, preference-heavy conversation people assume needs the human present. It turns out an explicit, queryable taste artifact answers it well enough to ship working software. That result is what pushed me to scale the same principle from "build me an app" to "run a research program" — see [An AI Scientist that Doesn't Drift]({% post_url 2026-08-18-ai-scientist-kkanbu %}).
+The requirements interview is exactly the kind of subjective, preference-heavy conversation people assume needs the human present. It turns out an explicit, queryable taste artifact answers it well enough to ship working software. That result is what pushed me to scale the same principle from "build me an app" to "run a research program" — see [An AI Scientist that Doesn't Drift]({% post_url 2026-08-19-ai-scientist-kkanbu %}).
 
 {% include share-buttons.html %}
